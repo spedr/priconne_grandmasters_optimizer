@@ -1,5 +1,6 @@
 import json
 import itertools
+from itertools import combinations
 
 synergy_dict = {
     "Guardian": [3, 5, 7],
@@ -35,18 +36,41 @@ with open(filename, "r") as infile:
 
 
 def get_starting_set(units, required_synergies):
-    starting_set = [unit for unit in units if any(synergy in unit['synergies'] for synergy in required_synergies.keys())]
-    return starting_set
+    units_with_required_synergies = [unit for unit in units if any(synergy in required_synergies for synergy in unit['synergies'])]
+    min_units = len(units) + 1
+    best_starting_sets = []
+
+    for i in range(1, len(units_with_required_synergies) + 1):
+        for unit_combination in combinations(units_with_required_synergies, i):
+            starting_set_synergies = {synergy: 0 for synergy in required_synergies}
+            for unit in unit_combination:
+                for synergy in unit['synergies']:
+                    if synergy in required_synergies:
+                        starting_set_synergies[synergy] += 1
+
+            if all(count >= required_synergies[synergy] for synergy, count in starting_set_synergies.items()):
+                if i < min_units:
+                    min_units = i
+                    best_starting_sets = [list(unit_combination)]
+                elif i == min_units:
+                    best_starting_sets.append(list(unit_combination))
+
+    return best_starting_sets
 
 def get_synergy_count(team, synergy):
     return sum([synergy in unit['synergies'] for unit in team])
 
 def is_valid_team(team, required_synergies, synergy_dict):
     for synergy, required_count in required_synergies.items():
-        if get_synergy_count(team, synergy) < required_count:
+        count = get_synergy_count(team, synergy)
+        if count < required_count:
             return False
-        if get_synergy_count(team, synergy) > max(synergy_dict[synergy]):
+
+    for synergy, levels in synergy_dict.items():
+        count = get_synergy_count(team, synergy)
+        if count > max(levels) and synergy not in required_synergies:
             return False
+
     return True
 
 def get_active_synergies(team, synergy_dict):
@@ -62,12 +86,22 @@ def get_active_synergies(team, synergy_dict):
     return active_synergies, total_score
 
 def generate_teams(units, required_synergies, synergy_dict):
-    starting_set = get_starting_set(units, required_synergies)
-    teams = []
-    for team in itertools.combinations(starting_set, 9):
-        if is_valid_team(team, required_synergies, synergy_dict):
-            teams.append(team)
-    return teams
+    starting_sets = get_starting_set(units, required_synergies)
+    if not starting_sets:
+        return []
+
+    valid_teams = []
+
+    for starting_set in starting_sets:
+        remaining_units = [unit for unit in units if unit not in starting_set]
+        remaining_slots = 9 - len(starting_set)
+
+        all_combinations = combinations(remaining_units, remaining_slots)
+        starting_set_teams = [starting_set + list(combination) for combination in all_combinations if is_valid_team(starting_set + list(combination), required_synergies, synergy_dict)]
+
+        valid_teams.extend(starting_set_teams)
+
+    return valid_teams
 
 def get_top_teams(teams, synergy_dict):
     sorted_teams = sorted(teams, key=lambda t: len(get_active_synergies(t, synergy_dict)), reverse=True)
@@ -86,7 +120,8 @@ def print_teams(teams, synergy_dict, num_teams):
 
 
 
-required_synergies = {"Guardian": 7, "Defense Shred": 2, "Healer": 2}
+required_synergies = {"Guardian": 7}
 teams = generate_teams(units, required_synergies, synergy_dict)
+
 top_teams = get_top_teams(teams, synergy_dict)
-print_teams(top_teams, synergy_dict, 20)
+print_teams(top_teams, synergy_dict, 10)
