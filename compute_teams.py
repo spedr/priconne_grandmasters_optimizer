@@ -1,10 +1,5 @@
 import json
 import itertools
-import time
-import random
-import heapq
-from itertools import combinations
-from operator import itemgetter
 
 synergy_dict = {
     "Guardian": [3, 5, 7],
