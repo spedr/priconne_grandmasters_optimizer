@@ -90,6 +90,7 @@ def generate_teams(units, required_synergies, synergy_dict):
     if not starting_sets:
         return []
 
+    print(len(starting_sets))
     valid_teams = []
 
     for starting_set in starting_sets:
@@ -120,8 +121,8 @@ def print_teams(teams, synergy_dict, num_teams):
 
 
 
-required_synergies = {"Guardian": 7}
+required_synergies = {"Guardian": 7, "Healer": 2}
 teams = generate_teams(units, required_synergies, synergy_dict)
 
 top_teams = get_top_teams(teams, synergy_dict)
-print_teams(top_teams, synergy_dict, 10)
+print_teams(top_teams, synergy_dict, 50)
