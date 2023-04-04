@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/priconne_grandmasters_optimizer/static/css/main.7ea84957.css",
-    "main.js": "/priconne_grandmasters_optimizer/static/js/main.31b19bff.js",
+    "main.js": "/priconne_grandmasters_optimizer/static/js/main.cc433fdf.js",
     "static/js/787.c0bcd130.chunk.js": "/priconne_grandmasters_optimizer/static/js/787.c0bcd130.chunk.js",
-    "static/media/Sheffy.png": "/priconne_grandmasters_optimizer/static/media/Sheffy.4e3153a0a79c31b0dd36.png",
+    "static/media/Shefi.png": "/priconne_grandmasters_optimizer/static/media/Shefi.4e3153a0a79c31b0dd36.png",
     "static/media/Matsuri.png": "/priconne_grandmasters_optimizer/static/media/Matsuri.383b8cee0da0c1ee55da.png",
     "static/media/Nanaka.png": "/priconne_grandmasters_optimizer/static/media/Nanaka.ec6a9956b4aeadb979c8.png",
     "static/media/Monika.png": "/priconne_grandmasters_optimizer/static/media/Monika.f9f455ede727a22ca46f.png",
@@ -93,11 +93,11 @@
     "static/media/logo.svg": "/priconne_grandmasters_optimizer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/priconne_grandmasters_optimizer/index.html",
     "main.7ea84957.css.map": "/priconne_grandmasters_optimizer/static/css/main.7ea84957.css.map",
-    "main.31b19bff.js.map": "/priconne_grandmasters_optimizer/static/js/main.31b19bff.js.map",
+    "main.cc433fdf.js.map": "/priconne_grandmasters_optimizer/static/js/main.cc433fdf.js.map",
     "787.c0bcd130.chunk.js.map": "/priconne_grandmasters_optimizer/static/js/787.c0bcd130.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ea84957.css",
-    "static/js/main.31b19bff.js"
+    "static/js/main.cc433fdf.js"
   ]
 }
