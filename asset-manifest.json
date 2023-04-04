@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/priconne_grandmasters_optimizer/static/css/main.7ea84957.css",
-    "main.js": "/priconne_grandmasters_optimizer/static/js/main.6d6bdb8d.js",
+    "main.js": "/priconne_grandmasters_optimizer/static/js/main.31b19bff.js",
     "static/js/787.c0bcd130.chunk.js": "/priconne_grandmasters_optimizer/static/js/787.c0bcd130.chunk.js",
     "static/media/Sheffy.png": "/priconne_grandmasters_optimizer/static/media/Sheffy.4e3153a0a79c31b0dd36.png",
     "static/media/Matsuri.png": "/priconne_grandmasters_optimizer/static/media/Matsuri.383b8cee0da0c1ee55da.png",
@@ -26,6 +26,7 @@
     "static/media/Hiyori.png": "/priconne_grandmasters_optimizer/static/media/Hiyori.e6b4a4dae60bf95a8c02.png",
     "static/media/Akari.png": "/priconne_grandmasters_optimizer/static/media/Akari.cd5cd6cfbac70e17b639.png",
     "static/media/Kokkoro.png": "/priconne_grandmasters_optimizer/static/media/Kokkoro.6c5daf5025b2524d71c9.png",
+    "static/media/Lima.png": "/priconne_grandmasters_optimizer/static/media/Lima.3f5346612ca42dadb197.png",
     "static/media/Rima.png": "/priconne_grandmasters_optimizer/static/media/Rima.3f5346612ca42dadb197.png",
     "static/media/Aoi.png": "/priconne_grandmasters_optimizer/static/media/Aoi.9ec1f1c55b103861a33f.png",
     "static/media/Jun.png": "/priconne_grandmasters_optimizer/static/media/Jun.98a2e537118aac44083c.png",
@@ -75,6 +76,7 @@
     "static/media/Sorcerer.png": "/priconne_grandmasters_optimizer/static/media/Sorcerer.38b91fac55114e71f255.png",
     "static/media/Attack Speed Up.png": "/priconne_grandmasters_optimizer/static/media/Attack Speed Up.d08e922fe25a2427ae2c.png",
     "static/media/Invincibility.png": "/priconne_grandmasters_optimizer/static/media/Invincibility.d4989f10c6e3ec2a50cb.png",
+    "static/media/Invulnerability.png": "/priconne_grandmasters_optimizer/static/media/Invulnerability.d4989f10c6e3ec2a50cb.png",
     "static/media/Swordmaster.png": "/priconne_grandmasters_optimizer/static/media/Swordmaster.6d70277e66319713617d.png",
     "static/media/Striker.png": "/priconne_grandmasters_optimizer/static/media/Striker.287e74f8e3da6fb106fa.png",
     "static/media/Evasion.png": "/priconne_grandmasters_optimizer/static/media/Evasion.d9697d51dbfd89b6b29b.png",
@@ -91,11 +93,11 @@
     "static/media/logo.svg": "/priconne_grandmasters_optimizer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/priconne_grandmasters_optimizer/index.html",
     "main.7ea84957.css.map": "/priconne_grandmasters_optimizer/static/css/main.7ea84957.css.map",
-    "main.6d6bdb8d.js.map": "/priconne_grandmasters_optimizer/static/js/main.6d6bdb8d.js.map",
+    "main.31b19bff.js.map": "/priconne_grandmasters_optimizer/static/js/main.31b19bff.js.map",
     "787.c0bcd130.chunk.js.map": "/priconne_grandmasters_optimizer/static/js/787.c0bcd130.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ea84957.css",
-    "static/js/main.6d6bdb8d.js"
+    "static/js/main.31b19bff.js"
   ]
 }
