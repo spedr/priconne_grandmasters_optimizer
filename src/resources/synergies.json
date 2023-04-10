@@ -1,0 +1,31 @@
+{
+    "typeSynergies": {
+        "HP Up": [2, 4, 6],
+        "TP Recovery": [3, 6],
+        "Evasion": [3, 4, 5],
+        "Attack Buff": [2, 4, 6],
+        "Stun": [2, 4],
+        "Invulnerability": [2, 3],
+        "Link": [3, 6],
+        "Defense Shred": [2, 4, 6],
+        "Additional Damage": [3, 6],
+        "Attack Speed Up": [2, 4, 6],
+        "Nakayoshibu": [3],
+        "Mirror_2": [1]
+    },
+    "jobSynergies": {
+        "Guardian": [3, 5, 7],
+        "Swordmaster": [3, 6],
+        "Sorcerer": [3, 5, 7],
+        "Shield Master": [2, 4, 6],
+        "Assassin": [2, 4, 6],
+        "Striker": [3, 5],
+        "Healer": [2, 3, 4],   
+        "Skill Guard": [2, 3, 4],
+        "Boost": [2, 3],
+        "Hunter": [2, 4, 6],
+        "Ice Dragon": [1],
+        "Mirror_1": [1]
+    }
+  }
+  

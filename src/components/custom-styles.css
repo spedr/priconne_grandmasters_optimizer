@@ -1,0 +1,9 @@
+.modal-container {
+    width: 35%;
+    max-width: 35%;
+    min-width: 35%;
+  }
+  
+  .help-text {
+    white-space: pre-wrap;
+  }
